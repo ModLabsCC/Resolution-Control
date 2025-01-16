@@ -221,7 +221,7 @@ public class ResolutionControlMod implements ModInitializer {
 			minecraftFramebuffers = new HashSet<>();
 		}
 
-		minecraftFramebuffers.add(client.worldRenderer.getEntityOutlinesFramebuffer());
+		minecraftFramebuffers.add(client.worldRenderer.entityOutlineFramebuffer);
 		minecraftFramebuffers.add(client.worldRenderer.getTranslucentFramebuffer());
 		minecraftFramebuffers.add(client.worldRenderer.getEntityFramebuffer());
 		minecraftFramebuffers.add(client.worldRenderer.getParticlesFramebuffer());
