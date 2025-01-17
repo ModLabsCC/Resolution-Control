@@ -34,7 +34,9 @@ dependencies {
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitivity on them.
 	//modCompile "com.jamieswhiteshirt:developer-mode:${project.developer_mode_version}"
+
 	modImplementation "com.terraformersmc:modmenu:${project.mod_menu_version}"
+	modLocalRuntime "maven.modrinth:sodium:${project.sodium_dev_version}"
 }
 
 processResources {
@@ -92,12 +94,12 @@ publishing {
 modrinth {
 	token = System.getenv("MODRINTH_TOKEN")
 	projectId = project.modrinth_id
-	versionNumber = project.version
+	versionNumber = version
 	versionName = "${project.getName()} ${project.mod_version}"
 	versionType = isMCVersionNonRelease() ? "beta" : "release"
 	changelog = "- Update to ${mcVersion}"
 	uploadFile = remapJar
-	gameVersions = [ project.minecraft_version ]
+	gameVersions = [ mcVersion ]
 	loaders = [ "fabric" ]
 	dependencies {
 		required.project 'fabric-api'
