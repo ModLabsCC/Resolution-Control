@@ -6,7 +6,11 @@
 	"name": "ResolutionControl++",
 	"description": "Gives you more control over minecraft's render resolution.",
 	"authors": [
-		"juliand665", "UltimateBoomer", "fantahund", "ModLabs"
+		"juliand665",
+		"UltimateBoomer",
+		"fantahund",
+		"ModLabs",
+		"qwazwsx"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/project/resolution-control-plus-plus",
