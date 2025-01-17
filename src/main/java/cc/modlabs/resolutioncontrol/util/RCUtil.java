@@ -35,7 +35,14 @@ public final class RCUtil {
 
         while (true) {
             File file = new File(new File(""), "fb" + string + (i == 1 ? "" : "_" + i) + ".png");
-            File entireDirectory = new File(new File(directory, "screenshots"), file.toString());
+            File screenshotsDirectory = new File(directory, "screenshots");
+            
+            if (!screenshotsDirectory.exists()) {
+                screenshotsDirectory.mkdirs();
+            }
+
+            File entireDirectory = new File(screenshotsDirectory, file.toString());
+            
             if (!entireDirectory.exists()) {
                 try {
                     entireDirectory.createNewFile();
