@@ -1,3 +1,7 @@
+> **Note:**  
+> If you want to use Minecraft 1.21.5, please use [RenderScale](https://modrinth.com/mod/renderscale) for now.
+
+
 <p align="center">
 	<img width=256px src=".github/assets/logo.png" />
 </p>
