@@ -1,5 +1,4 @@
-> **Note:**  
-> If you want to use Minecraft 1.21.5, please use [RenderScale](https://modrinth.com/mod/renderscale) for now.
+# **Note:**  If you want to use Minecraft 1.21.5+, please use [RenderScale](https://modrinth.com/mod/renderscale). I don't have the time to fix every breaking change Mojang is currently making whilst working towards Vibrant Visuals. 
 
 
 <p align="center">
